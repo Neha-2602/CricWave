@@ -1,0 +1,10 @@
+<div class="">
+  <h1 class="text-4xl font-extrabold text-gray-800 px-2">Match History</h1>
+  <div class="card-container flex-wrap flex-col md:flex-row flex">
+    @for (match of allMatch; track $index) {
+    <div class="p-2 md:w-[25%] w-full">
+      <app-match-card [match]="match"></app-match-card>
+    </div>
+    } @empty { There is no Match }
+  </div>
+</div>

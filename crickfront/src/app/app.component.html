@@ -1,0 +1,33 @@
+<header class="bg-blue-600 text-white shadow-lg">
+  <div class="container mx-auto flex justify-between items-center p-5">
+    <div class="text-2xl font-bold">CricWave</div>
+    <nav>
+      <ul class="flex space-x-4">
+        <li>
+          <a [routerLink]="'/home'" href="#" class="hover:text-gray-200"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a [routerLink]="'/live'" href="#" class="hover:text-gray-200"
+            >Live Matches</a
+          >
+        </li>
+        <li>
+          <a [routerLink]="'/history'" href="#" class="hover:text-gray-200"
+            >History</a
+          >
+        </li>
+        <li>
+          <a [routerLink]="'/point-table'" href="#" class="hover:text-gray-200"
+            >Point Table</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div></div>
+  </div>
+</header>
+<div class="px-28 py-8">
+  <router-outlet></router-outlet>
+</div>
